@@ -16,25 +16,29 @@ body{
 .cabecera{
     width: 100%;
     height:  70px;
-	background: linear-gradient(to right,#6E50AA,#BA68CC );
+	background: linear-gradient(to right,#0630AB,#1951F4 );
     text-align: center;
     position: fixed;
     z-index: 99;
     box-shadow: 0px 3px 10px -6px black;
     display: flex;
+
+	
 }
 
 header{
 
 	width: 100%;
     height:  70px;
+    
+	
 
 }
 
-.cabeza ul{
+.cabeza > ul{
 
 	list-style: none;
-	
+	min-width: 500px
 	
 
    
@@ -46,7 +50,8 @@ header{
     
 	position: relative;
 	display: inline-block;
-	height: 70px
+	height: 70px;
+
 	
 
 }
@@ -172,6 +177,8 @@ transition:all .3s ease;
 .buscador{
 
 	margin: auto;
+	width: 300px;
+	min-width: 300px
 
 }
 
@@ -312,25 +319,67 @@ padding: 20px
 
 	width: 100%;
 	height: 600px;
-	background-color: #6E50AA;
+	background-color: #0630AB;
 	display: flex;
 	
 }
-.imagen-curvo-1{
+.video-curvo-1{
  height: 600px;
- width: 800px;
- border-top-right-radius: 280px;
- border-bottom-right-radius: 280px;
-
+ width: 53%;
+ position: absolute;
  overflow: hidden;
+ border-top-right-radius: 292px;
+ border-bottom-right-radius: 292px
 
 }
-.imagen-curvo-1 img{
+.caja-video{
+	
+	 height: 600px;
+     width: 800px;
+    
+}
 
-	width: 100%;
-	height:100%;
+
+.video-curvo-1 video{
+    
+	 height: 100%;
+     
 
 }
+.capa-video{
+
+	height: 600px;
+	width: 53%;
+	position: absolute;
+	background: #303952;
+	z-index: 1;
+	opacity: .85;
+    border-top-right-radius: 290px;
+    border-bottom-right-radius: 290px
+
+}
+
+.texto-video{
+
+	position: absolute;
+	z-index: 5;
+	margin: 200px
+}
+
+.texto-video > h4{
+
+	font-size: 50px;
+	font-family: 'Lobster', cursive;
+	color: white;
+	
+}
+.texto-video > p{
+
+	color: white;
+	
+}
+
+
 .cuerpo-curvo-left{
 
 	width: 500px;
@@ -357,30 +406,18 @@ padding: 20px
     width: 650px;
     height: 200px;
 	position: relative;
-    background-color: #6E50AA;
+    background: linear-gradient(to right,#154AE6,#0630AB );
     top: 300px;
-    padding: auto;
+    padding: 30px;
    
 }
 .contenido-caja-2 {
 
 	padding: 20px;
-	color: white
-}
-.contenido-caja-2 p{
-
 	color: white;
-	font-family: inherit;
+	
 }
-.contenido-caja-2:after {
-position: absolute;
-top: 56px;
-content:""; 
-width:565px; 
-height:4px; 
-background: linear-gradient(to right,#59C796,#EEEEEE );
-transition:all .3s ease;
-}
+
 
 
 .imagen-cuerpo-curvo-2{
@@ -414,21 +451,58 @@ transition:all .3s ease;
 }
 
 
+.caja-imagenbaja{
+
+	display: flex;
+	position: relative;
+
+}
+.contenido-imagenbaja{
+  
+  
+  padding: 130px;
+  font-size: 16.5px
+
+
+}
+
+.contenido-imagenbaja > h4::before{ 
+position: absolute;
+bottom:305px;
+content:""; 
+width:18%; 
+height:4px; 
+background: linear-gradient(to right,#0630AB,#678CFB );
+transition:all .3s ease;
+} 
 
 
 .imagenbaja{
 
 	display: block;
-	margin-right: auto;
-    margin-left: auto;
+    margin-left: 40px;
 	overflow: hidden;
 	position: relative;
-	width: 100%;
-	height: 600px;
+	width: 50%;
+	height: 400px;
 	background-image: url(images/imagen-baja2.jpg);
 	background-size: 100% 100%;
 	cursor: pointer;
+	border-radius: 10px
+	
 
+}
+.azul{
+	
+	width: 38.4%;
+	height:408px;
+	position: absolute;
+	top: 28px;
+	left: 100px;
+	z-index: -1;
+	background: linear-gradient(to right,#0630AB,#5076E8);
+	border-radius: 10px;
+	object-fit: cover;  
 }
 
 .imagenbaja h3{
@@ -445,7 +519,7 @@ transition:all .3s ease;
 
 .imagenbaja:before{ 
 position: absolute;
-top:580px; 
+top:380px; 
 left:20px;
 content:""; 
 width:0%; 
@@ -500,7 +574,8 @@ h2:hover{
 	height: 300px;
 	overflow: hidden;
 	position: relative;
-	border-radius: 8px
+	border-radius: 8px;
+
 	
 }
 
@@ -508,6 +583,8 @@ h2:hover{
 
 	width: 100%;
 	height: 100%;
+	object-fit: cover;  
+
 
 }
 
@@ -548,7 +625,7 @@ bottom: -3px;
 content:""; 
 width:100%; 
 height:3px; 
-background: linear-gradient(to right,#59C796,#EEEEEE );
+background: linear-gradient(to right,#0630AB,#678CFB );
 transition:all .3s ease;
 
 } 
