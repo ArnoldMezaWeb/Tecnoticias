@@ -461,9 +461,14 @@ padding: 20px
   
   
   padding: 130px;
-  font-size: 16.5px
+  font-size: 16.5px;
+  min-width: 400px
+}
 
-
+.contenido-imagenbaja p{
+  
+  
+  min-width: 400px
 }
 
 .contenido-imagenbaja > h4::before{ 
@@ -484,6 +489,7 @@ transition:all .3s ease;
 	overflow: hidden;
 	position: relative;
 	width: 50%;
+	min-width: 500px;
 	height: 400px;
 	background-image: url(images/imagen-baja2.jpg);
 	background-size: 100% 100%;
@@ -495,6 +501,7 @@ transition:all .3s ease;
 .azul{
 	
 	width: 38.4%;
+	min-width: 500px;
 	height:408px;
 	position: absolute;
 	top: 28px;
@@ -803,7 +810,6 @@ transition: all 0.5s;
 }
 
 .contenido-noticias >h3{
-
 	font-family: 'Lobster', cursive;
 }
 
