@@ -381,6 +381,8 @@ padding: 20px
 .texto-video > p{
 
 	color: white;
+	width: 100%;
+	max-width: 300px
 	
 }
 
@@ -467,25 +469,21 @@ padding: 20px
 .contenido-imagenbaja{
   
   
-  padding: 125px;
+  padding: 110px;
+  padding-right: 10px;
+  margin: 0px;
   font-size: 16.5px;
-  
+  min-width: 430px
   
 }
-.contenido-imagenbaja > h4{
-  
-  
 
-  
-  
-}
 
 
 
 
 .contenido-imagenbaja > h4::before{ 
 position: absolute;
-bottom:300px;
+bottom:285px;
 content:""; 
 width:250px; 
 height:4px; 
@@ -500,7 +498,7 @@ transition:all .3s ease;
     margin-left: 40px;
 	overflow: hidden;
 	position: relative;
-	width: 50%;
+	width: 40%;
 	min-width: 500px;
 	height: 400px;
 	background-image: url(images/imagen-baja2.jpg);
