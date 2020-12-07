@@ -160,13 +160,13 @@ transition:all .3s ease;
 	width: 500px;
 	height: 80px;
 	overflow:hidden;
-	padding: 15px;
+	padding: 17px;
 	margin: 0px;
 }
 
 .imagen-menu img{
 
-	width: 180px;
+	width: 190px;
 	
 	
 }
@@ -294,7 +294,11 @@ input[type="search"]:focus{
 	z-index: 100
 }
 
+footer{
 
+	display: flex;
+
+}
 .footer-1{
     
 	height: 80px;
@@ -304,12 +308,10 @@ input[type="search"]:focus{
 	padding: 20px;
 	text-align: center;
 	font-family: Arial;
-	padding-left: 42%
+	padding-left: 37%
 	
-	
-
-
 }
+
 
 	
 

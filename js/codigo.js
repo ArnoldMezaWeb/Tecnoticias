@@ -35,3 +35,4 @@ $("#inputBusqueda").keyup(function() {
 $('body').click(function() {
  $("table").fadeOut("fast");
 });
+
